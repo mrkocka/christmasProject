@@ -5,6 +5,11 @@
     font-family: 'Nunito', sans-serif;
 }
 
+
+
+/*---------------------------------------------LOGIN--------------------------------------*/
+
+
 main{
     display: flex;
     justify-content: center;
@@ -14,11 +19,11 @@ main{
 .container{
     width: 25rem;
     height: 34rem;
-    
     box-shadow: 5px 10px 18px #888888;
     border-radius: 1.25rem;
     margin-top: 10rem;
     padding: 1.5rem;
+    display: none;
    
 
    
@@ -47,22 +52,96 @@ main{
 .christmasImg{
     display: flex;
     justify-content: center;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
 }
 
 .christmasImg img{
-    margin-top:3rem ;
-    margin-bottom: 3rem;
+    margin-top:.8rem ;
+    margin-bottom:;
+    width: 12.5rem;
+    height: 12.5rem;
 }
 
 /*-------------------------------------------Central text-------------------------------------*/
 
 .text{
-    outline: 1px solid black;
-    padding: 2rem;
+   /*  outline: 1px solid black; */
+    padding: 1rem;
 
 }
 .text p{
     text-align: justify;
     font-size: .9rem;
+}
+
+/*----------------------------------------------typeArea---------------------------------------*/
+
+.typeArea{
+    display: flex;
+    justify-content: center;
+}
+
+.typeArea input{
+    width:8rem ;
+    height: 1.9rem;
+    border: none;
+    background-color: #88888810;
+    color: black;
+    font-weight: 600;
+}
+
+
+/*------------------------------------------------button--------------------------------------*/
+
+.buttonArea{
+    display: flex;
+    justify-content: center;
+    /* outline: 1px solid black; */
+    margin-top: 1rem;
+}
+button{
+    margin: .5rem;
+    width: 8rem;
+    height: 2.5rem;
+    padding: .5rem;
+    font-size: 1rem;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    background-color:rgba(0, 128, 0, 0.473);
+    border-radius: 1.25rem;
+    border: none;
+}
+
+button:hover{
+    border-color: 1px rgba(0, 128, 0, 0.473);
+    outline: 1px solid;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.thanks{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* outline: 1px solid black; */
+    margin-top: 2.8rem;
+    font-size: .8rem;
+}
+
+.thanks a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/*-----------------------------------------treeContainer---------------------------------*/
+
+.treeContainer{
+    /* width: 1000px;
+    height: 800px; */
+    outline: 1px solid black ;
 }
