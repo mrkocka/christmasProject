@@ -11,11 +11,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Nunito:ital,wght@0,200;0,600;1,300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1024px)" href="./css/monitor.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="./css/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:530px)" href="./css/phone.css">
+    <link rel="stylesheet" media="screen and (max-width:375px)" href="./css/Mphone.css">
+    <link rel="stylesheet" media="screen and (max-width:320px)" href="./css/Sphone.css">
     <title>Virtuális Karácsonyi Kedvesség</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
 </head>
 <body>
     <main>
-        <div class="container">
+        <div id="loginContainer">
             <div class="flag">
                 <a href="#"><img src="./img/hungary.png" alt="hungaryFlag"></a>
                 <a href="#"><img src="./img/germany.png" alt="germanyFlag"></a>
@@ -24,14 +33,14 @@
             <div class="christmasImg">
                 <img src="./img/koszoru.png" alt="ChristmasImage">
             </div>
-            <div class="text">
+            <div class="centralText">
                 <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio dolor ut vel, aliquid debitis sapiente?
             </div>
             <div class="typeArea">
-                <input type="text" name="text" id="nameText" placeholder="Hogyan szólíthatlak?">
+                <input type="text"  id="nametext" placeholder="Hogyan szólíthatlak?">
             </div>
             <div class="buttonArea">
-                <button>Kezdjunk bele!</button>
+                <button id="GoButton" onclick="toggle()"> Kezdjunk bele!</button>
             </div>
             <div class="thanks">
                 <p>Köszönet az ötletért, és a kódért!</p>
@@ -39,16 +48,40 @@
             </div>
         </div>
 
-        <div class="treeContainer">
-            <h2>Próba!!</h2>
-
-            
-        </div>
+       
 
     </main>
+
+    <div id="treeContainer">
+            
+        <div id="christmas-decorations" class="christmas-decorations">
+            <div class="tree">
+              <div id="dropzone" class="tree-bottom"></div>
+              <div id="dropzone-1"class="tree-middle"></div>
+              <div id="dropzone-2" class="tree-top"></div>
+            </div>
+            <div id="decorations" class="decorations">
+              <p class="text">Csak húzd a fára! ;)<p>
+              <div id="ball1"></div>
+              <div id="tree-star"></div>
+              <div id="ball2"></div>
+              <div id="ball3"></div>
+              <div id="ball4"></div>
+              <div id="ball5"></div>
+              <div id="ball6"></div>
+              <div id="bow"></div>
+              <div id="bow2"></div>
+              <div id="bow3"></div>
+            </div>
+            <div id="game-complete"><br/>Boldog Karácsonyt <span id="username"></span>!!
+            </div>
+          </div>
+
+        
+    </div>
     
 
-
+<script src="./js/main.js"></script>
 
 </body>
 </html>
