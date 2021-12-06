@@ -33,8 +33,6 @@ main{
 .flag{
     display: flex;
     justify-content: flex-end;
-    
-    
 }
 
 .flag img{
@@ -58,7 +56,6 @@ main{
 
 .christmasImg img{
     margin-top:.8rem ;
-    margin-bottom:;
     width: 12.5rem;
     height: 12.5rem;
 }
@@ -124,15 +121,21 @@ button:hover{
     background-color: whitesmoke;
     color: black;
 }
-
+/*---------------------------------Thanks-----------------------------------------------------*/
 .thanks{
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* outline: 1px solid black; */
-    margin-top: 2.8rem;
+    /* outline: 1px solid black;  */
+    margin-top: 1.8rem;
     font-size: .8rem;
+
 }
+
+.thanks p{
+    padding: 0;
+    margin: 0;
+  }
 
 .thanks a{
     text-decoration: none;
