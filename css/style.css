@@ -5,6 +5,11 @@
     font-family: 'Nunito', sans-serif;
 }
 
+
+
+/*---------------------------------------------LOGIN--------------------------------------*/
+
+
 main{
     display: flex;
     justify-content: center;
@@ -14,11 +19,11 @@ main{
 .container{
     width: 25rem;
     height: 34rem;
-    
     box-shadow: 5px 10px 18px #888888;
     border-radius: 1.25rem;
     margin-top: 10rem;
     padding: 1.5rem;
+    display: none;
    
 
    
@@ -128,4 +133,15 @@ button:hover{
 .thanks a{
     text-decoration: none;
     color: black;
+}
+
+
+
+
+/*-----------------------------------------treeContainer---------------------------------*/
+
+.treeContainer{
+    /* width: 1000px;
+    height: 800px; */
+    outline: 1px solid black ;
 }
