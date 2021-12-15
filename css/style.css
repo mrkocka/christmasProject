@@ -1,14 +1,13 @@
 *{
-   /*  margin: 0;
-    padding: 0; */
-    /* box-sizing: border-box; */
     font-family: 'Nunito', sans-serif;
 }
 
 
 
 /*---------------------------------------------LOGIN--------------------------------------*/
-
+body{
+  background-color: #5e6d5a;
+}
 
 main{
     display: flex;
@@ -19,14 +18,11 @@ main{
 #loginContainer{
     width: 25rem;
     height: 34rem;
+    background-color: rgba(245, 245, 245, 0.863);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    /* box-shadow: 5px 10px 18px #888888; */
     border-radius: 1.25rem;
     margin-top: 10rem;
     padding: 1.5rem;
-    /* display: none; */
-   
-
    
 }
 /*------------------------------Flag and language---------------------------------*/
@@ -51,7 +47,6 @@ main{
 .christmasImg{
     display: flex;
     justify-content: center;
-    /* outline: 1px solid black; */
 }
 
 .christmasImg img{
@@ -63,8 +58,8 @@ main{
 /*-------------------------------------------Central text-------------------------------------*/
 
 .centralText{
-   /*  outline: 1px solid black; */
     padding: 1rem;
+    font-weight: 600;
 
 }
 .centralText p{
@@ -97,8 +92,7 @@ main{
 .buttonArea{
     display: flex;
     justify-content: center;
-    /* outline: 1px solid black; */
-    margin-top: 1rem;
+    margin-top: .1rem;
 }
 button{
     margin: .5rem;
@@ -126,8 +120,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* outline: 1px solid black;  */
-    margin-top: 1.8rem;
+    margin-top: 1rem;
     font-size: .8rem;
 
 }
@@ -141,9 +134,6 @@ button:hover{
     text-decoration: none;
     color: black;
 }
-
-
-
 
 /*-----------------------------------------treeContainer---------------------------------*/
 
@@ -159,8 +149,6 @@ button:hover{
 .christmas-decorations {
     position: relative;
   }
-
-
 
   .christmas-decorations:before {
     content:"";
@@ -253,7 +241,6 @@ button:hover{
     font-weight: bold;
     text-decoration: underline;
     font-size: .9rem;
-    /* margin-top: -.1rem; */
    
   }
   
@@ -283,34 +270,34 @@ button:hover{
     top:60px;
     left:50px;
     cursor: pointer;
-      }
+  }
   
   #tree-star:before {
-        border-bottom: 20px solid #cec42f;
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        position: absolute;
-        height: 0;
-        width: 0;
-        top: -12.5px;
-        left: -17.5px;
-        display: block;
-        content: '';
-        transform: rotate(-35deg);
-      }
+    border-bottom: 20px solid #cec42f;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -12.5px;
+    left: -17.5px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
   
   #tree-star:after {
-        position: absolute;
-        display: block;
-        top: 0.75px;
-        left: -26.25px;
-        width: 0px;
-        height: 0px;
-        border-right: 27px solid transparent;
-        border-bottom: 20px solid #cec42f;
-        border-left: 27px solid transparent;
-        transform: rotate(-70deg);
-        content:'';
+    position: absolute;
+    display: block;
+    top: 0.75px;
+    left: -26.25px;
+    width: 0px;
+    height: 0px;
+    border-right: 27px solid transparent;
+    border-bottom: 20px solid #cec42f;
+    border-left: 27px solid transparent;
+    transform: rotate(-70deg);
+    content:'';
   }
   
   #ball2 {
@@ -415,15 +402,13 @@ button:hover{
 #game-complete {
     display: none;
     position: absolute;
-    font-size:60px;
-    font-weight: bold;
-    font-family: tahoma;
-    color: #ae2012;
-    text-shadow: 2px 2px #001219;
+    font-size: 60px;
+    color: whitesmoke;
+    text-shadow: 3px 3px rgba(0,0,0,0.5) ;
+    font-weight: 600;
     top:120px;
     left:-385px;
     width: 800px;
     z-index:4;
     text-align: center;
-    outline: white 1px solid;
   }
